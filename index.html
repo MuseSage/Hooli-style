@@ -2,39 +2,175 @@
 <html lang="en">
 
 <head>
-    <!-- Заголовок страницы в браузере -->
-    <title>Awesome Hooli-style Popup, MuseSage </title>
-    <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Кодировка страницы -->
-    <meta charset="UTF-8">
-    <!-- Адаптив -->
-    <meta name="viewport" content="width=device-width">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <!-- Заголовок страницы в браузере -->
+   <title>Awesome Hooli-style Popup</title>
+   <!-- Подключаем CSS -->
+   <link rel="stylesheet" href="styles.css">
+   <!-- Кодировка страницы -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Адаптив -->
+   <meta name="viewport" content="width=device-width">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
 <!-- Отображаемое тело страницы -->
 
 <body>
-    <header>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#"><img src="img/mail.png" alt="mail"></a>
-                </li>
-                <li class="navigation__item">
-                    <div class="menu">
-                        <input class="menu__input" type="checkbox" id="btn-nav" />
-                        <label class="menu__label" for="btn-nav"><img src="img/popup-button.png"></label>
-                        
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+   <div class="wrapper">
+      <header class="header">
+         <nav class="nav-container">
+            <ul class="nav-container__items">
 
+               <li class="nav-container__item"><a class="nav-container__link" href="#">Mail</a></li>
+               <li class="nav-container__item"><a class="nav-container__link" href="#">Images</a></li>
+               <li class="nav-container__item nav-container__link">
+                  <input class="items-list__checkbox" type="checkbox" id="items-list__checkbox">
+                  <label for="items-list__checkbox" class="items-list__check-label">
+                     <img class="items-list__img" src="./img/popup-button.png" alt="apps">
+                  </label>
+                  <div class="items-list">
+                     <div class="items-list__main">
+
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/calendar.png" alt="">
+                              <p class="items-element__name">Calendar</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/mail.png" alt="">
+                              <p class="items-element__name">Mail</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/news.png" alt="">
+                              <p class="items-element__name">News</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/maps.png" alt="#">
+                              <p class="items-element__name">Maps</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/files.png" alt="">
+                              <p class="items-element__name">Files</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/contacts.png" alt="">
+                              <p class="items-element__name">Contacts</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/tanslation.png" alt="">
+                              <p class="items-element__name">Translate</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/videos.png" alt="">
+                              <p class="items-element__name">Videos</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/search.png" alt="">
+                              <p class="items-element__name">Search</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/photos.png" alt="">
+                              <p class="items-element__name">Photos</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/apps.png" alt="">
+                              <p class="items-element__name">Apps</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/documents.png" alt="">
+                              <p class="items-element__name">Documents</p>
+                           </a>
+                        </div>
+                     </div>
+
+                     <input class="items-list-more__checkbox" type="checkbox" id="items-list-more__checkbox">
+                     <label for="items-list-more__checkbox" class="items-list__more-label">More</label>
+
+                     <div class="items-list__more">
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/chat.png" alt="">
+                              <p class="items-element__name">Chat</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/classroom.png" alt="">
+                              <p class="items-element__name">Classroom</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/collection.png" alt="">
+                              <p class="items-element__name">Collection</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/mars.png" alt="">
+                              <p class="items-element__name">Mars</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/blogs.png" alt="">
+                              <p class="items-element__name">Blogs</p>
+                           </a>
+                        </div>
+                        <div class="items-element">
+                           <a class="items-element__link" href="#">
+                              <img class="items-element__img" src="./img/promo.png" alt="">
+                              <p class="items-element__name">Promos</p>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-container__item">
+                  <a class="nav-container__link" href="#">
+                     <img class="notification" src="./img/bell.png" alt="notification">
+                  </a>
+               </li>
+               <li class="nav-container__item">
+                  <a class="nav-container__link" href="#">
+                     <img class="avatar" src="img/avatar.jpg" alt="avatar">
+                  </a>
+               </li>
+
+            </ul>
+         </nav>
+
+      </header>
+
+      <footer class="footer">&copy; Awesome Hooli-style Popup by
+         <a class="footer__link" href="https://github.com/MuseSage"> &nbsp MuseSage </a> &ensp; 2023
+      </footer>
+   </div>
 </body>
 
 </html>
