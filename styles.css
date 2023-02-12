@@ -43,11 +43,7 @@ a {
    text-decoration: none;
    /* cursor: pointer; */
 }
-.nav-container__img{
-   display: block;
-   width: 25px;
-   height: 25px;
-}
+
 .nav-container__items {
    display: flex;
 }
