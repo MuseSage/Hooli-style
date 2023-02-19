@@ -2,177 +2,178 @@
 <html lang="en">
 
 <head>
+   <!-- Заголовок страницы в браузере -->
    <title>Awesome Hooli-style Popup</title>
+   <!-- Подключаем CSS -->
    <link rel="stylesheet" href="styles.css">
+   <!-- Кодировка страницы -->
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Адаптив -->
    <meta name="viewport" content="width=device-width">
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
+<!-- Отображаемое тело страницы -->
+
 <body>
    <div class="wrapper">
       <header class="header">
-         <nav class="header__menu">
-            <ol class="header-menu__list">
-               <li class="header__item"><a class="header__link" href="#">Mail</a></li>
-
-               <li class="header__item"><a class="header__link" href="#">Images</a></li>
-
-               <li class="header__item popup">
-                  <label class="popup__label" for="popup__input">
-                     <img class="popup-item__img" src="./img/popup-button.png" alt="Apps">
+         <nav class="nav-container">
+            <ol class="nav-container__list">
+               <li class="nav-container__item"><a class="nav-container__link" href="#">Mail</a></li>
+               <li class="nav-container__item"><a class="nav-container__link" href="#">Images</a></li>
+               <li class="nav-container__item nav-container__link">
+                  <label for="popup-list__input" class="popup-list__label">
+                     <img class="nav-container__img" src="./img/popup-button.png" alt="Apps">
                   </label>
-                  <input class="popup__input" type="checkbox">
+                  <input class="popup-list__input" type="checkbox" id="popup-list__input">
 
                   <div class="popup__menu">
                      <ol class="popup__list">
-
-                        <li class="popup-element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/calendar.png" alt="Calendar">
-                              <p class="popup-element__name">Calendar</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/calendar.png" alt="Calendar">
+                              <p class="list-element__name">Calendar</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/mail.png" alt="Mail">
-                              <p class="popup-element__name">Mail</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/mail.png" alt="Mail">
+                              <p class="list-element__name">Mail</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/news.png" alt="News">
-                              <p class="popup-element__name">News</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/news.png" alt="News">
+                              <p class="list-element__name">News</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/maps.png" alt="Maps">
-                              <p class="popup-element__name">Maps</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/maps.png" alt="Maps">
+                              <p class="list-element__name">Maps</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/files.png" alt="Files">
-                              <p class="popup-element__name">Files</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/files.png" alt="Files">
+                              <p class="list-element__name">Files</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/contacts.png" alt="Contacts">
-                              <p class="popup-element__name">Contacts</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/contacts.png" alt="Contacts">
+                              <p class="list-element__name">Contacts</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/tanslation.png" alt="Translate">
-                              <p class="popup-element__name">Translate</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/tanslation.png" alt="Translate">
+                              <p class="list-element__name">Translate</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/videos.png" alt="Videos">
-                              <p class="popup-element__name">Videos</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/videos.png" alt="Videos">
+                              <p class="list-element__name">Videos</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/search.png" alt="Search">
-                              <p class="popup-element__name">Search</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/search.png" alt="Search">
+                              <p class="list-element__name">Search</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/photos.png" alt="Photos">
-                              <p class="popup-element__name">Photos</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/photos.png" alt="Photos">
+                              <p class="list-element__name">Photos</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/apps.png" alt="Apps">
-                              <p class="popup-element__name">Apps</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/apps.png" alt="Apps">
+                              <p class="list-element__name">Apps</p>
                            </a>
                         </li>
 
-                        <li class="popup__element">
-                           <a class="popup-element__link" href="#">
-                              <img class="popup-element__img" src="./img/documents.png" alt="Documents">
-                              <p class="popup-element__name">Documents</p>
+                        <li class="list-element">
+                           <a class="list-element__link" href="#">
+                              <img class="list-element__img" src="./img/documents.png" alt="Documents">
+                              <p class="list-element__name">Documents</p>
                            </a>
                         </li>
                      </ol>
 
-                     <input class="popup-list__input-sub" type="checkbox" id="popup-list__input-sub">
-                     <label for="popup-list__input-sub" class="popup-list__label-sub">More</label>
+                     <input class="popup-sublist__input" type="checkbox" id="popup-sublist__input">
+                     <label for="popup-sublist__input" class="popup-sublist__label">More</label>
 
-                     <ol class="popup__list-sub">
-
-                        <li class="popup__element-sub">
-                           <a class="popup__element-link-sub" href="#">
-                              <img class="popup__img-sub" src="./img/chat.png" alt="Chat">
-                              <p class="popup__sub-name">Chat</p>
+                     <ol class="popup__sublist">
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/chat.png" alt="Chat">
+                              <p class="sublist-element__name">Chat</p>
                            </a>
                         </li>
 
-                        <li class="popup-element-sub">
-                           <a class="popup-element-sub__link" href="#">
-                              <img class="popup-element-sub__img" src="./img/classroom.png" alt="Classroom">
-                              <p class="popup-element-sub__name">Classroom</p>
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/classroom.png" alt="Classroom">
+                              <p class="sublist-element__name">Classroom</p>
                            </a>
                         </li>
 
-                        <li class="popup-element-sub">
-                           <a class="popup-element-sub__link" href="#">
-                              <img class="popup-element-sub__img" src="./img/collection.png" alt="Collection">
-                              <p class="popup-element-sub__name">Collection</p>
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/collection.png" alt="Collection">
+                              <p class="sublist-element__name">Collection</p>
                            </a>
                         </li>
 
-                        <li class="popup-element-sub">
-                           <a class="popup-element-sub__link" href="#">
-                              <img class="popup-element-sub__img" src="./img/mars.png" alt="Mars">
-                              <p class="popup-element-sub__name">Mars</p>
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/mars.png" alt="Mars">
+                              <p class="sublist-element__name">Mars</p>
                            </a>
                         </li>
 
-                        <li class="popup-element-sub">
-                           <a class="popup-element-sub__link" href="#">
-                              <img class="popup-element-sub__img" src="./img/blogs.png" alt="Blogs">
-                              <p class="popup-element-sub__name">Blogs</p>
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/blogs.png" alt="Blogs">
+                              <p class="sublist-element__name">Blogs</p>
                            </a>
                         </li>
 
-                        <li class="popup-element-sub">
-                           <a class="popup-element-sub__link" href="#">
-                              <img class="popup-element-sub__img" src="./img/promo.png" alt="Promos">
-                              <p class="popup-element-sub__name">Promos</p>
+                        <li class="sublist-element">
+                           <a class="sublist-element__link" href="#">
+                              <img class="sublist-element__img" src="./img/promo.png" alt="Promos">
+                              <p class="sublist-element__name">Promos</p>
                            </a>
                         </li>
-
                      </ol>
                   </div>
                </li>
-               <li class="header__item">
-                  <a class="header__link" href="#">
-                     <img class="header__img" src="img/bell.png" alt="Bell">
+               <li class="nav-container__item">
+                  <a class="nav-container__link" href="#">
+                     <img class="nav-container__img" src="img/bell.png" alt="Bell">
                   </a>
                </li>
-               <li class="header__item">
-                  <a class="header__link" href="#">
-                     <img class="header__img" src="img/avatar.jpg" alt="Avatar">
+               <li class="nav-container__item">
+                  <a class="nav-container__link" href="#">
+                     <img class="nav-container__img" src="img/avatar.jpg" alt="Avatar">
                   </a>
                </li>
 
