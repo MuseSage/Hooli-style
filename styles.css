@@ -201,14 +201,14 @@ a {
    appearance: none;
 }
 .popup-list__input:checked ~ .popup__menu,
-.popup-sublist__input:checked ~ .popup__submenu {
+.popup-sublist__input:checked ~ .popup__sublist {
    display: block;
 }
-.popup-list__input:checked ~ .popup__sublist {
+.popup-list__input:checked ~ .popup__list {
    border-top: 1px solid #b6b4b4;
    display: grid;
 }
-.popup-list__input:checked ~ .popup-sublist__label {
+.popup-sublist__input:checked ~ .popup-sublist {
    display: none;
 } /*********/
 
